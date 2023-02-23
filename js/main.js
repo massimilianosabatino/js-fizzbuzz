@@ -1,14 +1,17 @@
 'use strict';
 
+//Definizione variabili globali
+let numberCurrent;
+
 //Ciclo per generare numeri
 for (let i = 1; i < 101; i++) {
+    numberCurrent = i;
     if (i % 3 === 0 && i % 5 === 0) {
-        console.log('fizzbuzz');
+        numberCurrent = 'fizzbuzz';
     } else if (i % 3 === 0) {
-        console.log('fizz');
+        numberCurrent = 'fizz';
     } else if (i % 5 === 0) {
-        console.log('buzz');
-    console.log(i);
+        numberCurrent = 'buzz';
     }
-    console.log(i);
+    console.log(numberCurrent);
 }
