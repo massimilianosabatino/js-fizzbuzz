@@ -16,20 +16,18 @@ h1 {
     text-align: center;
 }
 
-.big {
-
-}
 
 #container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     justify-content: flex-start;
 }
 
 #container > div {
-    flex: 0 1 calc((100% / 2) - 20px);
+    /* flex: 0 1 calc((100% / 2) - 20px); */
+    width: 150px;
     height: 150px;
     background-color: #1389B2;
     text-align: center;
@@ -50,24 +48,31 @@ h1 {
     background-color: #F0466F;
 }
 
-#container > div:last-child {
-    align-self: auto;
-}
-
 @media screen and (min-width:586px) {
+    #container {
+        max-width: 90%;
+    }
     #container > div {
-        flex: 0 1 calc((100% / 4) - 20px);
+        /* flex: 0 1 calc((100% / 4) - 20px); */
     }
 }
 
 @media screen and (min-width:860px) {
+    #container {
+        max-width: 90%;
+    }
+
     #container > div {
-        flex: 0 1 calc((100% / 6) - 20px);
+        /* flex: 0 1 calc((100% / 6) - 20px); */
     }
 }
 
 @media screen and (min-width:1200px) {
+    #container {
+        max-width: 1200px;
+    }
+
     #container > div {
-        flex: 0 1 calc((100% / 8) - 20px);
+        /* flex: 0 1 calc((100% / 8) - 20px); */
     }
 }
