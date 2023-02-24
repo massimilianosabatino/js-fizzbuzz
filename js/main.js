@@ -22,6 +22,8 @@ for (let i = 1; i < 101; i++) {
         div.classList.add('buzz');
     }
     console.log(numberCurrent);
+    //Qui anzichè fare così, si poteva inserire in ELSE di stampare i (consol.log(i)) e avrebbe funzionato senta creare una nuova variabile
+
 
     //inserimento dentro al div il valore della variabile genrata dal ciclo
     div.append(numberCurrent);
